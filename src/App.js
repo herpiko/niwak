@@ -16,21 +16,24 @@ class App extends Component {
 		}
     if (data.recipients[query.recipient.substr(0, 6)]) {
       const key = secretKey + query.recipient;
+      console.log(key);
       const cipher = aes256.createCipher(key);
       const re = /[^a-z\d]/i;
       // Recipient
       const encryptedRecipient =
         data.recipients[query.recipient.substr(0, 6).toUpperCase()].recipient
+      console.log(encryptedRecipient);
       const decryptedRecipient = cipher.decrypt(encryptedRecipient);
-      if (re.test(decryptedRecipient)) {
-				// Failed to decrypt
-        return;
-      }
       // Payload
       const encryptedPayload =
         data.recipients[query.recipient.substr(0, 6).toUpperCase()].payload
       const decryptedPayload = cipher.decrypt(encryptedPayload);
-			const payload = JSON.parse(decryptedPayload)
+			var payload;
+      try {
+        payload = JSON.parse(decryptedPayload)
+      } catch(e) {
+        return;
+      }
 			payload.recipientName = decryptedRecipient;
 			payload.isValidRecipient = true;
       this.setState(payload);
