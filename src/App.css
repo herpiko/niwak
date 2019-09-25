@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'EasyNovember';
+    src: url('./assets/EasyNovember.ttf')  format('truetype');
+}
+body {
+    background-image: url('./assets/whitenoise-361x370.png') ;
+    background-repeat: repeat;
+		font-size:18px !important;
+    font-family: Georgia, serif;
+}
+
+#main-card {
+	padding-top:85px;
+}
+
+.card-corner {
+   background-image: url("./assets/corner-left.png"), url("./assets/corner-right.png");
+   background-position: left top, right top; /*Positioning*/
+	 background-size:195px 195px;
+   background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+.c-container {
+    height: 400x;
+    width: 200px;
+    top: -200px;
+    right: -100px;
+}
+.centered-text {
+    text-align: center !important;
+}
+.border-left-right {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.time-info {
+    margin-top: 32px;
+}
+.time-info p {
+    font-family: Georgia, serif;
+}
+.name-wrapper {
+		height:900px;
+		width:100%;
+		color:dimgrey;
+		text-align:'center';
+    background-image: url('./assets/frame.png');
+		background-size:contain;
+		background-repeat: no-repeat;
+		background-position: center;
+    font-family: "EasyNovember";
+		padding-top:80px;
+}
+
+.recipient {
+	border: 2px solid goldenrod;
+	border-radius: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.full-name{
+    font-family: "EasyNovember";
+		font-size:52px;
+		line-height:52px;
+		padding-bottom:10px;
+		color:goldenrod;
+}
+.btn-primary {
+	background-color:goldenrod;
+}
+.main-flower-frame {
+	width:100%;
+	z-index:9;
+}
+.info {
+    margin-bottom: 8px;
+}
+.card-leaf {
+    background-image: url('./assets/leaf.png'), url('./assets/leaf2.png');
+}
+.card {
+    border-radius: 8px;
+}
+
+/* Handle responsive  issue */
+@media (min-width: 750px) {
+	.card-corner {
+		 background-size:185px 185px !important;
+	}
+	.name-wrapper {
+			height:900px !important;
+	}
+	#wife {
+	  margin-left:-32px;
+	  font-size:124px;
+	}
+	#husband {
+	  margin-top:-70px;
+	  margin-left:32px;
+	  font-size:124px;
+	}
+	#and {
+	  font-size:48px;
+    font-family: Georgia, serif;
+	  margin-top:-170px;
+	}
+}
+@media (min-width: 650px) and (max-width:749px) {
+	.card-corner {
+		 background-size:165px 165px !important;
+	}
+	.name-wrapper {
+			height:600px !important;
+	}
+	#wife {
+		margin-top:16px;
+	  margin-left:-32px;
+	  font-size:96px;
+	}
+	#and {
+	  margin-top:-120px;
+	  font-size:48px;
+    font-family: Georgia, serif;
+	}
+	#husband {
+	  margin-top:-70px;
+	  margin-left:32px;
+	  font-size:96px;
+	}
+}
+
+@media (min-width: 450px) and (max-width:649px) {
+	#main-card {
+		padding-top:55px;
+	}
+	.card-corner {
+		 background-size:135px 135px !important;
+	}
+	.name-wrapper {
+			height:600px !important;
+	}
+	#wife {
+		margin-top:72px;
+	  margin-left:-32px;
+	  font-size:64px;
+	}
+	#and {
+	  margin-top:-80px;
+	  font-size:32px;
+    font-family: Georgia, serif;
+	}
+	#husband {
+	  margin-top:-40px;
+	  margin-left:32px;
+	  font-size:64px;
+	}
+	.time-info {
+	    font-size: 24px;
+	}
+}
+
+@media (min-width: 200px) and (max-width:449px) {
+	.separator {
+		height:45px !important;
+	}
+	#main-card {
+		padding-top:35px;
+	}
+	.card-corner {
+		 background-size:95px 95px !important;
+	}
+	.name-wrapper {
+			height:300px !important;
+	}
+	#wife {
+		margin-top:1px;
+	  margin-left:-32px;
+	  font-size:32px;
+	}
+	#and {
+	  margin-top:-42px;
+	  font-size:18px;
+    font-family: Georgia, serif;
+	}
+	#husband {
+	  margin-top:-24px;
+	  margin-left:32px;
+	  font-size:32px;
+	}
+	.time-info {
+	    font-size: 24px;
+	}
+}
