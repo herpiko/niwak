@@ -19,7 +19,7 @@
     "prepare": "node recipients.js",
     "build": "npm run prepare && react-scripts build && rm -rf docs; mv build docs; ",
     "obfuscate":"./node_modules/.bin/javascript-obfuscator docs/static/js/$(ls docs/static/js | grep main | grep -v runtime | grep -v map) --output docs/static/js/$(ls docs/static/js | grep main | grep -v runtime | grep -v map)",
-    "prefix": "(cd docs/static/css && sed -ri 's|/static|/niwak/static|g' main.*);(cd docs/static/js && sed -ri 's|/static|/niwak/static|g' main.*) && (cd docs/ && sed -ri 's|/static|/niwak/static|g' index.html)",
+    "prefix": "(cd docs/static/css && sed -ri 's|/static|/wedding/static|g' main.*);(cd docs/static/js && sed -ri 's|/static|/wedding/static|g' main.*) && (cd docs/ && sed -ri 's|/static|/wedding/static|g' index.html)",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

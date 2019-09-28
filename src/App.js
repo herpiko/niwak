@@ -18,7 +18,6 @@ class App extends Component {
       const key = secretKey + query.recipient;
       console.log(key);
       const cipher = aes256.createCipher(key);
-      const re = /[^a-z\d]/i;
       // Recipient
       const encryptedRecipient =
         data.recipients[query.recipient.substr(0, 6).toUpperCase()].recipient

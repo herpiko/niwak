@@ -33,13 +33,9 @@ csv()
         );
       }
       let key = process.env.REACT_APP_SECRET_KEY + hash.substr(0, 16);
-      console.log(key);
       let cipher = aes256.createCipher(key);
       recipients[hash.substr(0, 6)] = {}
       recipients[hash.substr(0, 6)].recipient = cipher.encrypt(data[i].name);
-      console.log(recipients[hash.substr(0, 6)].recipient)
-      let bo = cipher.decrypt(recipients[hash.substr(0, 6)].recipient)
-      console.log(bo);
       recipients[hash.substr(0, 6)].payload = cipher.encrypt(JSON.stringify(payload));
 
       data[i].url = (process.env.BASE_URL ? process.env.BASE_URL : '') + '/?recipient=' + hash.substr(0, 16);

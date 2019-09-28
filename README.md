@@ -33,6 +33,11 @@ The static invitation website will be ready in `docs` directory. You may customi
 False URL will not give you any data,
 <a href="https://aguno.xyz/niwak/?recipient=EEA90A64DE03925E">https://aguno.xyz/niwak/?recipient=false_recipient_key</a>
 
+
+## Looking for generator as service app?
+
+<a href="https://undangan.app/">https://undangan.app/</a>
+
 ## License
 
 MIT
