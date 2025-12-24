@@ -5,7 +5,7 @@
   "dependencies": {
     "aes256": "^1.0.4",
     "csvtojson": "^2.0.10",
-    "javascript-obfuscator": "^0.18.1",
+    "javascript-obfuscator": "^4.2.0",
     "json2csv": "^4.5.3",
     "qs": "^6.9.0",
     "react": "^16.8.6",
