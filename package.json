@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "aes256": "^1.0.4",
-    "csvtojson": "^2.0.10",
+    "csvtojson": "^2.0.13",
     "javascript-obfuscator": "^0.18.1",
     "json2csv": "^4.5.3",
     "qs": "^6.9.0",
